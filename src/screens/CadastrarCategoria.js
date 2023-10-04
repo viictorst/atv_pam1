@@ -14,7 +14,7 @@ export default function Login() {
                 
                 <View style={styles.containerLabel}>
                     <MaterialIcons name='pencil-plus' size={20} color={'#666'} />
-                    <Text style={styles.label}> Observações Categoria </Text>
+                    <Text style={styles.label}> Nome Categoria </Text>
                 </View>
 
                 <View style={styles.containerTextInput}>
