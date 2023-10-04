@@ -16,7 +16,10 @@ export default function App() {
         <Stack.Screen 
           name='CadastrarCategoria'
           component={CadastrarCategoria}
-          options={{title:"Cadastrar Categoria"}}
+          options={{
+            title:"Cadastrar",
+            headerTintColor: '#00b2ff',
+          }}
         />
 
       </Stack.Navigator>

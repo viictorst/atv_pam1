@@ -11,8 +11,12 @@ export default function Login() {
                         source={require('../assets/logo-cadastrarcategoria.png')}
                     />
                 </View>
+                
+                <View style={styles.containerLabel}>
+                    <MaterialIcons name='pencil-plus' size={20} color={'#666'} />
+                    <Text style={styles.label}> Observações Categoria </Text>
+                </View>
 
-                <Text style={styles.label}> Nome Categoria </Text>
                 <View style={styles.containerTextInput}>
                     <TextInput
                         style={styles.inputName}
@@ -21,11 +25,15 @@ export default function Login() {
                     />
                 </View>
 
-                <Text style={styles.label}> Observações Categoria </Text>
+                <View style={styles.containerLabel}>
+                    <MaterialIcons name='book-open' size={20} color={'#666'} />
+                    <Text style={styles.label}> Observações Categoria </Text>
+                </View>
+
                 <View style={styles.containerTextInput}>
                     <TextInput
                         style={styles.inputObs}
-                        keyboardType='text'
+                        keyboardType='e-mail'
                         multiline={true}
                         numberOfLines={10}
                     />
@@ -76,11 +84,17 @@ const styles = StyleSheet.create({
         textAlignVertical: 'top',
     },
 
+    containerLabel: {
+        display: 'flex',
+        flexDirection: 'row',
+    },
+
     label: {
-        marginBottom: 5,
+        marginBottom: 8,
         color: '#333',
         fontWeight: '600',
         fontSize: 16,
+        marginLeft: 5,
     },
 
     botaoCadastrar: {
@@ -94,5 +108,5 @@ const styles = StyleSheet.create({
         fontWeight: '700',
         fontSize: 16,
         textAlign: 'center',
-    },
+    }
 });
